@@ -1,3 +1,8 @@
+/* Reka keeps the popper wrapper of a force-mounted tooltip in place after it closes, so it has to let clicks through */
+[data-reka-popper-content-wrapper]:has(.tooltip) {
+	pointer-events: none;
+}
+
 .tooltip {
 	--tooltip-foreground-color: var(--foreground-inverted);
 	--tooltip-background-color: var(--background-inverted);
